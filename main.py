@@ -1,3 +1,9 @@
+import argparse
+import time
+from config import TestConfig
+from command_sender import ConsoleCommandSender, UartCommandSender
+from test_framework import TestFramework
+
 def main():
     parser = argparse.ArgumentParser(description='Automated Test Framework')
     parser.add_argument('--mode', choices=['console', 'uart'], default='console',
